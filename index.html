@@ -26,15 +26,20 @@
         <div class="box">
           <h1 id="questionNumber">Quiz</h1>
           <p id="question">Question</p>
-          <input id="text-field" type="text" class="form-control" />
-          <input
-            id="button"
-            type="submit"
-            value="submit"
-            class="btn btn-primary btn-block"
-            ;
-            onclick="clickButton()"
-          />
+
+          <div id="question-container" class="hide">
+            <div id="answer-buttons" class="btn-grid">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+            </div>
+          </div>
+          <!-- <input id="text-field" type="text" class="form-control" /> -->
+          <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+          </div>
         </div>
       </div>
     </div>

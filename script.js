@@ -1,3 +1,8 @@
+
+// const start = document.getElementById("start-btn").addEventListener("click", clickButton);
+// const next = document.getElementById("next-btn").addEventListener("click", clickButton);
+
+
 const questions = [["what color are bananas"],
 ["what color are green apples"],
 ["what color are strawberrys"],
@@ -24,6 +29,7 @@ function checkAnswers() {
 }
 
 function clickButton() {
+    alert("i call the clickButton function"); //test to see if function works 
     checkAnswers();
     questions.shift(); //removes first array block.
     answers.shift();
@@ -35,6 +41,12 @@ function clickButton() {
 }
 
 function start() {
+
+    const start = document.getElementById("start-btn").addEventListener("click", clickButton);
+    const next = document.getElementById("next-btn").addEventListener("click", clickButton);
+
+    // document.getElementById("start-btn").addEventListener("click", clickButton);
+    // document.getElementById("next-btn").addEventListener("click", clickButton);
 
     if (questions.length != 0) {  //if there are questions left .
 

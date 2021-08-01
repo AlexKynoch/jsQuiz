@@ -4,6 +4,14 @@ const questions = [["what color are bananas", "yellow"],
 ["what color are oranges", "orange"],
 ["what color are tomatos", "red"]];
 
+questionNo = 1;
+
 function start() {
-    alert("im starting now"); //test to see if this function is working
+
+
+
+    document.getElementById("questionNumber").innerHTML = "Question " + questionNo; //in the html @ the id of questionNumber put the word Question and the value of the variable called questionNo (with a space in between).
+
+    document.getElementById("question").innerHTML = questions[0][0]; //got to the questions constant get the first element of the first inner array in the questions array and put result into the part of the html that has the id of question.
+
 }

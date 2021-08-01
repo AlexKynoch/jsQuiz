@@ -1,14 +1,20 @@
-const questions = [["what color are bananas", "yellow"],
-["what color are green apples", "green"],
-["what color are strawberrys", "red"],
-["what color are oranges", "orange"],
-["what color are tomatos", "red"]];
+const questions = [["what color are bananas"],
+["what color are green apples"],
+["what color are strawberrys"],
+["what color are oranges"],
+["what color are tomatos"]];
+
+const answers = [["yellow"],
+["green"],
+["red"],
+["orange"],
+["red"]];
 
 let questionNo = 1;
 let score = 0;
 
 function checkAnswers() {
-    if (document.getElementById("text-field").value == questions[0][1]) {
+    if (document.getElementById("text-field").value == answers[0][0]) {
         //checks to see if answer input into the text field is the same as the value of the second element of the first array - if so do the following.
         score++ //add one to the score 
         document.getElementById("text-field").value = ""; //clears the answer from the text field.
@@ -20,6 +26,7 @@ function checkAnswers() {
 function clickButton() {
     checkAnswers();
     questions.shift(); //removes first array block.
+    answers.shift();
     questionNo++; // add one to the question number
     start(); // now [0][0] will be the second question
 

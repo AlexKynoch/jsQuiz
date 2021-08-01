@@ -15,3 +15,7 @@ function start() {
     document.getElementById("question").innerHTML = questions[0][0]; //got to the questions constant get the first element of the first inner array in the questions array and put result into the part of the html that has the id of question.
 
 }
+
+function clickButton() {
+    alert("I am calling the clickButton function");  //test to see if this function is working
+}

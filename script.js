@@ -4,7 +4,8 @@ const questions = [["what color are bananas", "yellow"],
 ["what color are oranges", "orange"],
 ["what color are tomatos", "red"]];
 
-questionNo = 1;
+let questionNo = 1;
+let score = 0;
 
 function clickButton() {
     questions.shift(); //removes first array block.
@@ -28,6 +29,9 @@ function start() {
     }
     else {
         document.getElementById("questionNumber").innerHTML = "The End!";  //if no questions left in questoins array change questionNumber message to "The End!".
+        document.getElementById("question").innerHTML = "Your score is " + score;
+        document.getElementById("text-field").remove(); //remove the text-field
+        document.getElementById("button").remove(); // remove the button.
     }
 
 }

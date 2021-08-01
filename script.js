@@ -15,7 +15,7 @@ let score = 0;
 
 function checkAnswers() {
     if (document.getElementById("text-field").value == answers[0][0]) {
-        //checks to see if answer input into the text field is the same as the value of the second element of the first array - if so do the following.
+        //checks to see if answer input into the text field is the same as the value of the first element of the answers array - if so do the following.
         score++ //add one to the score 
         document.getElementById("text-field").value = ""; //clears the answer from the text field.
 

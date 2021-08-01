@@ -6,6 +6,12 @@ const questions = [["what color are bananas", "yellow"],
 
 questionNo = 1;
 
+function clickButton() {
+    questions.shift(); //removes first array block.
+    questionNo++; // add one to the question number
+    start(); // now [0][0] will be the second question
+}
+
 function start() {
 
 
@@ -18,8 +24,3 @@ function start() {
 
 }
 
-function clickButton() {
-    questions.shift(); //removes first array block.
-    questionNo++ // add one to the question number
-    setup(); // now [0][0] will be the second question
-}

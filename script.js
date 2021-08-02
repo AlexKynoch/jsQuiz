@@ -21,8 +21,10 @@ let score = 0;
 function checkAnswers() {
 
 
+
     if (document.getElementById("btn1").value == answers[0][0]) {
         //checks to see if answer input into the text field is the same as the value of the second element of the first array - if so do the following.
+
         score++ //add one to the score 
 
 
